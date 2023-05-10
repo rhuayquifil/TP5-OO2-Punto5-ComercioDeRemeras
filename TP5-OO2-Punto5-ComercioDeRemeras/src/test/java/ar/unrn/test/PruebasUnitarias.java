@@ -16,7 +16,7 @@ public class PruebasUnitarias {
 
 		double precioFinal = importada.precioFinal();
 
-		assertEquals(135.1875, precioFinal);
+		assertEquals(133.0, precioFinal);
 	}
 
 	@Test
@@ -25,6 +25,6 @@ public class PruebasUnitarias {
 
 		double precioFinal = nacional.precioFinal();
 
-		assertEquals(140.07, precioFinal);
+		assertEquals(136.5, precioFinal);
 	}
 }

@@ -10,7 +10,12 @@ public abstract class Remera {
 	}
 
 	public double precioFinal() {
-		return recargoDelLocal(bonificacion(transporte(impuestoAduanero(recargo(precioUnitario)))));
+		// agregar la sumas aca
+
+		return precioUnitario + recargo(precioUnitario) + impuestoAduanero(precioUnitario) + transporte(precioUnitario)
+				+ bonificacion(precioUnitario) + recargoDelLocal(precioUnitario);
+
+//		return recargoDelLocal(bonificacion(transporte(impuestoAduanero(recargo(precioUnitario)))));
 	}
 
 	protected abstract double recargo(double precioUnitario);
